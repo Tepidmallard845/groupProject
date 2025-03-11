@@ -1,8 +1,8 @@
-rook,knight,bishop,queen,king,bishop,knight,rook
-pawn,pawn,pawn,pawn,pawn,pawn,pawn,pawn
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-pawn,pawn,pawn,pawn,pawn,pawn,pawn,pawn
-rook,knight,bishop,queen,king,bishop,knight,rook
+brook,bknight,bbishop,bqueen,bking,bbishop,bknight,brook,
+bpawn,bpawn,bpawn,bpawn,bpawn,bpawn,bpawn,bpawn,
+,,,,,,,,
+,,brook,,,,,,
+,,,,,,,,
+,,,,,,,,
+wpawn,wpawn,wpawn,wpawn,wpawn,wpawn,wpawn,wpawn,
+wrook,wknight,wbishop,wqueen,wking,wbishop,wknight,wrook,
