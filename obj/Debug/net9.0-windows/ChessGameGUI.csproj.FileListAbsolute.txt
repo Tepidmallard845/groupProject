@@ -1,0 +1,16 @@
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\ChessGameGUI.exe
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\ChessGameGUI.deps.json
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\ChessGameGUI.runtimeconfig.json
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\ChessGameGUI.dll
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\ChessGameGUI.pdb
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.AssemblyInfoInputs.cache
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.AssemblyInfo.cs
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.csproj.CoreCompileInputs.cache
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.dll
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\refint\ChessGameGUI.dll
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.pdb
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ChessGameGUI.genruntimeconfig.cache
+C:\Users\isabe\ChessGameGUI\obj\Debug\net9.0-windows\ref\ChessGameGUI.dll
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\Assets\OtherAssets\PlayButton.png
+C:\Users\isabe\ChessGameGUI\bin\Debug\net9.0-windows\Assets\OtherAssets\PlayScreen.png
