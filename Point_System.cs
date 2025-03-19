@@ -13,7 +13,7 @@ public class ChessPointSystem
         { "Bishop", 3 },
         { "Rook", 5 },
         { "Queen", 9 },
-        { "King", 0 }
+        { "King", 0 } // only zero as once king is taken the game is over, but could be set to something like 999 and to win you need 999 points for example
     };
 
     public void CapturePiece(string pieceName, string capturedBy)
@@ -34,7 +34,7 @@ public class ChessPointSystem
             }
             else
             {
-                Console.WriteLine("Invalid player specified. Use 'White' or 'Black'.");
+                Console.WriteLine("Not Black OR White");
             }
         }
         else
@@ -43,6 +43,7 @@ public class ChessPointSystem
         }
     }
 
+//To start a new game, points are reset to 0
     public void ResetPoints()
     {
         WhitePoints = 0;
@@ -55,8 +56,4 @@ public class ChessPointSystem
         return (WhitePoints, BlackPoints);
     }
 
-    public void DisplayPoints()
-    {
-        Console.WriteLine($"Current Points - White: {WhitePoints}, Black: {BlackPoints}");
-    }
 }

@@ -14,10 +14,10 @@ public partial class Form1 : Form
         Text = "PvP Chess Game";
         Width = 512;
         Height = 538;
-        Image screen = Image.FromFile("Assets/OtherAssets/PlayScreen.png");
+        Image screen = Image.FromFile("Assets/Other_Assets/Play_Screen.png");
         Image resizedScreen = new Bitmap(screen, new Size(500,500));
         this.BackgroundImage = resizedScreen;
-        Image play = Image.FromFile("Assets/OtherAssets/PlayButton.png");
+        Image play = Image.FromFile("Assets/Other_Assets/Play_Button.png");
         Image resizedPlay = new Bitmap(play, new Size(128,64));
         Image hoverPlay = new Bitmap(play, new Size(154,76));
         

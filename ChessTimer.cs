@@ -25,12 +25,27 @@ namespace ChessTimer
             Label blackLabel = new Label { Text = "Black: 15:00", Location = new System.Drawing.Point(250, 100), AutoSize = true, Name = "blackLabel" };
             this.Controls.Add(whiteLabel);
             this.Controls.Add(blackLabel);
+
+            // Add Start Button
+            Button startButton = new Button { Text = "Start", Location = new System.Drawing.Point(50, 200), AutoSize = true };
+            startButton.Click += StartButton_Click;
+            this.Controls.Add(startButton);
+
+            // Add Switch Turn Button (for manual testing, optional)
+            Button switchTurnButton = new Button { Text = "Switch Turn", Location = new System.Drawing.Point(150, 200), AutoSize = true };
+            switchTurnButton.Click += SwitchTurnButton_Click;
+            this.Controls.Add(switchTurnButton);
         }
 
-        private void PlayButton_Click(object sender, EventArgs e)
+        private void StartButton_Click(object sender, EventArgs e)
         {
             whiteTimer.Start();
             isWhiteTurn = true;
+        }
+
+        private void SwitchTurnButton_Click(object sender, EventArgs e)
+        {
+            SwitchTurn();
         }
 
         private void WhiteTimer_Tick(object sender, EventArgs e)
@@ -70,6 +85,12 @@ namespace ChessTimer
             labelToUpdate.Text = $"{team}: {timeText}";
         }
 
+        public void OnMoveMade()
+        {
+            // Automatically switch turns after a move
+            SwitchTurn();
+        }
+
         public void SwitchTurn()
         {
             if (isWhiteTurn)
@@ -83,6 +104,11 @@ namespace ChessTimer
                 whiteTimer.Start();
             }
             isWhiteTurn = !isWhiteTurn;
+        }
+
+        private void ShowWinScreen(string winner)
+        {
+            MessageBox.Show($"{winner} wins!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
