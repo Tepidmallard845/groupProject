@@ -13,7 +13,7 @@ namespace ChessTimer
 
         public ChessTimerForm()
         {
-            InitialiseComponent();
+            InitializeComponent();
 
             whiteTimer.Interval = 1000;
             whiteTimer.Tick += WhiteTimer_Tick;
@@ -21,9 +21,8 @@ namespace ChessTimer
             blackTimer.Interval = 1000;
             blackTimer.Tick += BlackTimer_Tick;
 
-
-            Label whiteLabel = new Label { Text = "White: 15:00", Location = new System.Drawing.Point(50, 100), AutoSize = true };
-            Label blackLabel = new Label { Text = "Black: 15:00", Location = new System.Drawing.Point(250, 100), AutoSize = true };
+            Label whiteLabel = new Label { Text = "White: 15:00", Location = new System.Drawing.Point(50, 100), AutoSize = true, Name = "whiteLabel" };
+            Label blackLabel = new Label { Text = "Black: 15:00", Location = new System.Drawing.Point(250, 100), AutoSize = true, Name = "blackLabel" };
             this.Controls.Add(whiteLabel);
             this.Controls.Add(blackLabel);
         }
@@ -44,7 +43,7 @@ namespace ChessTimer
             else
             {
                 whiteTimer.Stop();
-                MessageBox.Show("White's time is up!");
+                ShowWinScreen("Black");
             }
         }
 
@@ -58,7 +57,7 @@ namespace ChessTimer
             else
             {
                 blackTimer.Stop();
-                MessageBox.Show("Black's time is up!");
+                ShowWinScreen("White");
             }
         }
 

@@ -1,20 +1,17 @@
 using System;
+using System.Windows.Forms;
 
-public class WinScreen
+namespace ChessTimer
 {
-    public void DisplayResult(string gamewin)
+    public partial class WinScreen : Form
     {
-        if (gamewin == "White")
+        public WinScreen(string winner)
         {
-            Console.WriteLine("White Wins");
+            InitializeComponent();
+            Label winLabel = new Label
+            {
+                Console.WriteLine ($"{winner} wins!") // make this work with the gui using Black_wins and White_wins or Draw_wins
+            };
+            this.Controls.Add(winLabel);
         }
-        else if (gamewin == "Black")
-        {
-            Console.WriteLine("Black Wins");
-        }
-        else
-        {
-            Console.WriteLine("Draw");
-        }
-    }
 }
